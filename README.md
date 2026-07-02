@@ -1,5 +1,5 @@
 <p align = 'center'>
-<img src ='assests/logo.png' alt = 'LIMA Logo' width = '150'>
+<img src ='assests/logo.png' alt = 'LIMA Logo' width = '250'>
 </p>
 
 

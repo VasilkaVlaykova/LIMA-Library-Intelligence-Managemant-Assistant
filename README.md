@@ -1,6 +1,8 @@
 <p align = 'center'>
-<img src ='assests/logo.png' alt = 'LIMA Logo' width = '80'>
+<img src ='assests/logo.png' alt = 'LIMA Logo' width = '150'>
 </p>
+
+
 
 <h1 align = 'center'>
 LIMA-Library Intelligence Management Assistan

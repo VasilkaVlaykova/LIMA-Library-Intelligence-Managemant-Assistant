@@ -2,23 +2,23 @@
 
 ## Overview
 
-LIMA (Library Intelligence Management Assistant) is an AI-powered Interactive Learning and Media Platform designed to modernise the way libraries, bookstores, educational institutions, and families discover, manage, and engage with books and digital learning resources.
+LIMA (Library Intelligence Management Assistant) is a conceptual AI-powered Interactive Learning and Media Platform designed to modernise how libraries, bookstores, educational institutions, and families discover, manage, and engage with books and digital learning experiences.
 
-The platform combines Artificial Intelligence (AI), cloud computing, multimedia services, and interactive technologies within a scalable multi-tenant ecosystem. LIMA provides intelligent recommendations, AI-generated book trailers, children's reading experiences, digital content management, and cloud-based administration through a unified platform.
+The proposed solution combines Artificial Intelligence (AI), cloud computing, multimedia services, and interactive technologies within a scalable multi-tenant ecosystem. By integrating intelligent recommendation services, AI-generated book trailers, interactive reading experiences, digital content management, and cloud-based administration, LIMA creates a unified platform that enhances both educational engagement and operational efficiency.
 
-Designed using modern cloud-native principles, LIMA supports both Business-to-Business (B2B) and Business-to-Consumer (B2C) service models while offering Software-as-a-Service (SaaS), Hardware-as-a-Service (HaaS), and Gateway-as-a-Service (GaaS).
+Designed using cloud-native architectural principles, the platform supports Business-to-Business (B2B) and Business-to-Consumer (B2C) service models while providing Software-as-a-Service (SaaS), Hardware-as-a-Service (HaaS), and Gateway-as-a-Service (GaaS). The architecture has been designed with scalability, security, modularity, and future AI integration in mind, enabling organisations to adopt innovative digital services without compromising performance or data isolation.
 
 ---
 
 # Vision
 
-To transform learning and reading experiences by creating an intelligent digital ecosystem that connects readers, educators, libraries, bookstores, and publishers through Artificial Intelligence, cloud technologies, and interactive media.
+To transform reading and learning experiences by creating an intelligent digital ecosystem that connects readers, educators, libraries, bookstores, and publishers through Artificial Intelligence, cloud technologies, and interactive multimedia services.
 
 ---
 
 # Mission
 
-To provide secure, scalable, and intelligent digital services that enhance book discovery, improve learning experiences, and support organisations in delivering personalised educational content through innovative AI technologies.
+To deliver secure, scalable, and intelligent digital solutions that enhance book discovery, encourage lifelong learning, and empower educational organisations to provide personalised, engaging, and accessible learning experiences through modern AI technologies.
 
 ---
 
@@ -26,18 +26,19 @@ To provide secure, scalable, and intelligent digital services that enhance book 
 
 The primary objectives of the LIMA platform are to:
 
-- Improve book discovery using AI-powered recommendations.
-- Increase user engagement through interactive digital experiences.
+- Improve book discovery through AI-powered recommendation services.
+- Increase user engagement using interactive digital learning experiences.
 - Support children's literacy with AI-assisted reading technologies.
-- Provide scalable cloud services for educational organisations.
-- Deliver a secure and multi-tenant platform capable of supporting multiple organisations.
+- Provide scalable cloud services for libraries, educational institutions, and commercial organisations.
+- Deliver a secure multi-tenant platform capable of supporting multiple independent organisations.
 - Simplify digital content management through intelligent automation.
+- Enable future AI-driven educational services through a modular and extensible architecture.
 
 ---
 
 # Target Users
 
-LIMA is designed for a wide range of users, including:
+LIMA is designed to support a diverse range of stakeholders, including:
 
 - Public libraries
 - Academic libraries
@@ -45,31 +46,54 @@ LIMA is designed for a wide range of users, including:
 - Bookstores
 - Publishers
 - Teachers and librarians
-- Parents
+- Parents and guardians
 - Children
 - Individual readers
+
+Each organisation operates as an independent tenant while securely sharing the same cloud infrastructure, ensuring data isolation, scalability, and centralised platform management.
 
 ---
 
 # Platform Highlights
 
-The platform includes:
+The proposed platform includes the following key capabilities:
 
-- AI Book Recommendation Engine
-- AI-Generated Book Trailers
+- AI-powered Book Recommendation Engine
+- AI-generated Book Trailers
 - Interactive Library Kiosks
 - Children's AI Reading Display
-- Children's AI tablet
-- Multi-Tenant Cloud Platform
-- Secure User Management
-- Analytics Dashboard
+- Children's AI Tablet
+- Multi-Tenant Cloud Architecture
+- Secure Identity and User Management
+- Administrative Dashboard
 - Digital Content Management
-- Administrative Portal
+- Analytics and Reporting
+- Cloud-native API Services
+- Future AI Service Integration
+
+---
+
+# Repository Purpose
+
+This repository presents the complete architectural design of the LIMA platform and demonstrates the planning, analysis, and technical decision-making behind the proposed solution. It has been developed as a professional solution architecture portfolio showcasing enterprise architecture practices, cloud-native system design, business analysis, security architecture, user experience design, and technical documentation.
+
+The documentation follows a structured approach, covering business requirements, solution architecture, cloud infrastructure, database design, security, deployment strategy, and future development opportunities.
 
 ---
 
 # Project Scope
 
-This repository presents the complete solution architecture, system design, cloud architecture, database design, security architecture, user experience design, and technical documentation for the LIMA platform.
+This repository includes the following architectural deliverables:
 
-The repository focuses on the architectural design of the solution rather than a production-ready software implementation.
+- Executive Summary
+- Business Requirements
+- Solution Architecture
+- Cloud Architecture
+- Database Design
+- Security Architecture
+- User Experience Design
+- Technology Stack
+- Deployment Architecture
+- Future Roadmap
+
+The focus of this repository is the architectural design and strategic planning of an enterprise AI platform rather than a production-ready software implementation. Its purpose is to demonstrate solution architecture, cloud design, systems thinking, and software engineering best practices through a complete conceptual enterprise solution.

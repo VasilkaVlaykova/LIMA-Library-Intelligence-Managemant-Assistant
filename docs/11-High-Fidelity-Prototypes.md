@@ -190,3 +190,60 @@ The final screen demonstrates the multimodal reading experience. As the narratio
 </p>
 
 **Figure 11.3.** High-fidelity prototype of the Children's AI Reading Display showing book selection, playback, and multimodal reading interaction.
+
+
+
+
+# 4. LIMA AI Tablet Prototype
+
+The LIMA AI Tablet prototype demonstrates a personalised AI-powered learning device designed for home environments. The tablet combines multimodal artificial intelligence, parental controls, speech narration, interactive learning activities, and educational content within a dedicated child-friendly device.
+
+The prototype illustrates the complete interaction between the parent, the child, and the AI learning assistant.
+
+---
+
+The first prototype presents the tablet's home interface together with the parent configuration menu. Parents can configure age groups, manage parental controls, adjust system settings, and organise the digital book catalogue before allowing children to access the learning content.
+
+<p align="center">
+    <img src="../images/architecture/tablet-home.png"
+         alt="LIMA AI Tablet Home Interface"
+         width="100%">
+</p>
+
+**Figure 11.4.** LIMA AI Tablet home interface and parent configuration.
+
+---
+
+After selecting a book, the child is presented with the playback screen. The interface displays the selected book cover while the AI assistant prepares narration using cloud-based text-to-speech services. Large playback controls provide a simple and intuitive experience for young users.
+
+<p align="center">
+    <img src="../images/architecture/tablet-reading.png"
+         alt="LIMA AI Tablet Reading"
+         width="75%">
+</p>
+
+**Figure 11.5.** Book playback interface.
+
+---
+
+During reading, the AI assistant synchronises narration with highlighted letters, words, and illustrations. This multimodal learning approach combines speech, images, animation, and text to improve pronunciation, vocabulary development, and reading confidence.
+
+<p align="center">
+    <img src="../images/architecture/tablet-learning.png"
+         alt="LIMA AI Learning"
+         width="75%">
+</p>
+
+**Figure 11.6.** Interactive multimodal learning experience.
+
+---
+
+The tablet also supports healthy learning habits through AI-assisted parental controls. When the configured screen-time limit has been reached, the AI assistant politely informs the child that it is time to stop reading and continue later. This feature encourages balanced device usage while supporting child wellbeing.
+
+<p align="center">
+    <img src="../images/architecture/tablet-screen-time.png"
+         alt="Screen Time Reminder"
+         width="75%">
+</p>
+
+**Figure 11.7.** AI screen-time reminder.

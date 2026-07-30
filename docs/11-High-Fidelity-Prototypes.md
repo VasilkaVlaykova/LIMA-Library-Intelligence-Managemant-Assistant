@@ -170,3 +170,23 @@ The second prototype illustrates the remaining interaction after the trailer beg
 </p>
 
 **Figure 11.2.** AI Trailer Kiosk recommendation interface.
+
+# 3. Children's AI Reading Display Prototype
+
+The Children's AI Reading Display prototype demonstrates an interactive multimodal reading experience designed for libraries, bookstores, and educational environments. The interface combines digital books, AI narration, illustrations, and touch interaction to encourage independent reading while supporting early literacy development.
+
+The prototype illustrates the complete user journey through three interaction stages.
+
+The first screen presents the book selection interface, where children can browse an illustrated digital library and choose a book using simple touch controls. Voice guidance welcomes the child and provides instructions before reading begins.
+
+The second screen displays the selected book and allows the child to start AI narration using simple playback controls. The interface has been designed with large buttons and minimal distractions to improve usability for young readers.
+
+The final screen demonstrates the multimodal reading experience. As the narration plays, the story is displayed together with animated illustrations while spoken words are synchronised with highlighted text. Navigation controls allow children to pause, replay, or move between pages independently.
+
+<p align="center">
+    <img src="../images/architecture/children-reading-display.png"
+         alt="Children Reading Display Prototype"
+         width="100%">
+</p>
+
+**Figure 11.3.** High-fidelity prototype of the Children's AI Reading Display showing book selection, playback, and multimodal reading interaction.

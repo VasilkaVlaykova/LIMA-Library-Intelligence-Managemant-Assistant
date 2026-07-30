@@ -345,3 +345,133 @@ The Trailer Kiosk shall:
 ## Design Summary
 
 The Trailer Kiosk has been designed as a cloud-connected multimedia device that combines RFID technology, cloud computing, and Artificial Intelligence to improve book discovery within libraries and bookstores. The architecture separates user interaction from backend processing, allowing metadata retrieval, trailer streaming, and recommendation generation to be performed securely through the LIMA cloud platform. This modular approach improves scalability, simplifies maintenance, and enables additional AI services to be integrated without changing the kiosk hardware.
+
+
+---
+
+# 5.3 Children's AI Reading Display
+
+## Overview
+
+The LIMA Children's AI Reading Display is an interactive educational device designed for libraries, bookstores, schools, and other educational environments. The display provides children with an engaging reading experience by combining digital books, AI-assisted narration, text highlighting, and multimedia learning.
+
+The device communicates with the LIMA cloud platform to retrieve licensed digital books, illustrations, and narration content while using cloud-based Text-to-Speech (TTS) services to provide synchronised audio narration. The interface is designed specifically for young children, offering simple touch interactions and age-appropriate content.
+
+---
+
+## Primary Actors
+
+- Child / User
+- Library Staff
+- Bookstore Staff
+- Educational Staff
+- Administrator
+
+---
+
+## Sequence Diagram
+
+The sequence diagram illustrates how the Children's AI Reading Display communicates with the LIMA Backend, Cloud Storage, and Text-to-Speech service after a child selects a digital book. The platform retrieves the book content, streams narration audio, highlights the spoken words, and allows the child to navigate through the story.
+
+<p align="center">
+    <img src="../images/architecture/children-display-sequence-diagram.png"
+         alt="Children AI Reading Display Sequence Diagram"
+         width="95%">
+</p>
+
+**Figure 3.8.** Sequence diagram illustrating communication between the Children's AI Reading Display and cloud services.
+
+---
+
+## Use Case Diagram
+
+The use case diagram illustrates the interactions performed by children, educational staff, and administrators while using and managing the Children's AI Reading Display.
+
+<p align="center">
+    <img src="../images/architecture/children-display-use-case-diagram.png"
+         alt="Children AI Reading Display Use Case Diagram"
+         width="90%">
+</p>
+
+**Figure 3.9.** Use case diagram for the Children's AI Reading Display.
+
+---
+
+# Functional Requirements
+
+## Child / User Requirements
+
+The system shall:
+
+- Allow children to browse and search for books using touch interaction.
+- Allow children to select a digital book.
+- Display the selected book cover, title, and page content.
+- Allow children to start, pause, stop, and replay narration.
+- Allow children to navigate between book pages.
+- Highlight words while narration is playing.
+- Provide clear pronunciation through AI-generated narration.
+
+---
+
+## Library, Bookstore and Educational Staff Requirements
+
+The system shall:
+
+- Allow staff to start and stop the display.
+- Allow staff to report technical issues.
+- Allow staff to manage available book collections.
+- Allow staff to monitor appropriate device usage.
+- Allow staff to apply age-based content restrictions.
+- Allow staff to assist children during interaction.
+
+---
+
+## Administrator Requirements
+
+The system shall:
+
+- Request new digital book content.
+- Register additional display devices.
+- Manage subscriptions.
+- Manage tenant accounts.
+- Configure narration settings.
+- View device usage statistics.
+- Monitor platform performance.
+- Send system notifications and maintenance alerts.
+
+---
+
+# System Functional Requirements
+
+The Children's AI Reading Display shall:
+
+- Retrieve selected book content from cloud storage.
+- Display the book cover, illustrations, and page content.
+- Generate or stream narration using Text-to-Speech services.
+- Synchronise narration with word highlighting.
+- Enforce age-appropriate content filtering.
+- Display network or content availability errors.
+- Cache frequently accessed books where appropriate.
+- Synchronise reading progress during narration.
+- Automatically receive software updates from the LIMA cloud platform.
+
+---
+
+# Non-Functional Requirements
+
+The Children's AI Reading Display shall:
+
+- Provide an interface suitable for young children.
+- Use accessible fonts, colours, and touch controls.
+- Load digital book content within three seconds under normal operating conditions.
+- Provide high-quality audio narration suitable for children.
+- Use an eye-friendly display suitable for extended reading.
+- Protect children by avoiding the storage of personal information.
+- Support remote maintenance and software updates.
+- Maintain reliable operation throughout normal daily use.
+
+---
+
+## Design Summary
+
+The Children's AI Reading Display has been designed as a cloud-connected educational device that combines digital books, multimedia content, and Artificial Intelligence to encourage children's reading and learning. By separating the presentation layer from cloud-based content services, the platform can securely deliver licensed books, AI narration, and educational content while supporting future expansion through additional AI learning services without requiring hardware redesign.

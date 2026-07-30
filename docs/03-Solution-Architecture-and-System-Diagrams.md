@@ -109,7 +109,7 @@ The Trailer Kiosk registration process begins when a tenant accesses the Website
 The platform verifies that the organisation has an active subscription and confirms that the kiosk has been successfully connected to the tenant account. If the subscription or registration is unsuccessful, the tenant is redirected to the appropriate stage to complete the process.
 
 <p align="center">
-  <img src="../images/web-portal-kiosk-registration-flow.png"
+  <img src="../images/architecture/web-portal-kiosk-registration-flow.png"
        alt="LIMA Trailer Kiosk Registration Flow"
        width="70%">
 </p>
@@ -125,7 +125,7 @@ The AI Tablet registration process is designed for individual users and families
 The user then logs in to the tablet, accesses the service menu, and configures parental controls and a secure PIN where required. The platform checks the subscription and device registration before confirming successful activation.
 
 <p align="center">
-  <img src="../images/web-portal-tablet-registration-flow.png"
+  <img src="../images/architecture/web-portal-tablet-registration-flow.png"
        alt="LIMA AI Tablet Registration Flow"
        width="70%">
 </p>
@@ -141,7 +141,7 @@ The Children’s AI Reading Display is registered by a tenant organisation throu
 The device login and subscription are verified before access is provided. When the display has been successfully registered, the tenant receives a confirmation notification.
 
 <p align="center">
-  <img src="../images/web-portal-display-registration-flow.png"
+  <img src="../images/architecture/web-portal-display-registration-flow.png"
        alt="LIMA Children’s Reading Display Registration Flow"
        width="70%">
 </p>

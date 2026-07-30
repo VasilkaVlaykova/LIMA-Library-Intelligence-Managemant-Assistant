@@ -143,3 +143,30 @@ Parents can monitor children's reading activity, configure device settings, and 
 # Summary
 
 The high-fidelity prototypes demonstrate the proposed appearance and functionality of the LIMA platform before implementation. The interfaces provide a realistic representation of the complete user journey, from public access and account registration to cloud-based management of devices and personalised learning services. The prototypes also validate the usability, navigation, and consistency of the platform while supporting the functional requirements presented throughout this portfolio.
+
+
+# 2. AI Trailer Kiosk Prototype
+
+The AI Trailer Kiosk prototype demonstrates the interaction between users and the intelligent book discovery system. The prototype illustrates the complete user journey, beginning with book identification through RFID or barcode scanning and ending with personalised recommendations.
+
+The first prototype presents the initial interaction with the kiosk. After the user places a book on the RFID reader or scans its barcode, the system recognises the selected title, retrieves the associated metadata, and prepares the multimedia content. Once processing is complete, the kiosk displays the book cover together with an option to watch the AI-generated trailer.
+
+<p align="center">
+    <img src="../images/architecture/kiosk-prototype-1.png"
+         alt="LIMA Kiosk Prototype"
+         width="95%">
+</p>
+
+**Figure 11.1.** AI Trailer Kiosk interaction prototype.
+
+---
+
+The second prototype illustrates the remaining interaction after the trailer begins playing. Following the trailer presentation, the kiosk displays additional books written by the same author together with related recommendations based on category and genre. Within bookstore environments, pricing information is displayed, while library installations present shelf locations to help visitors locate the recommended books.
+
+<p align="center">
+    <img src="../images/architecture/kiosk-prototype-2.png"
+         alt="LIMA Kiosk Recommendation Prototype"
+         width="95%">
+</p>
+
+**Figure 11.2.** AI Trailer Kiosk recommendation interface.

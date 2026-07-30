@@ -86,8 +86,7 @@ LIMA is designed as a Multimodal Artificial Intelligence platform capable of int
 3. [Solution Architecture & System Diagrams](docs/03-Solution-Architecture-and-System-Diagrams.md)
 4. [Cloud Architecture](docs/04-Cloud-Architecture.md)
 5. [Database Design](docs/05-Database-Design.md)
-6. [Security Architecture](docs/06-Security-Architecture.md)
-7. [User Experience](docs/07-User-Experience.md)
-8. [Future Roadmap](docs/08-Future-Roadmap.md)
-9. [Technology Stack](docs/09-Technology-Stack.md)
-10. [Deployment Architecture](docs/10-Deployment-Architecture.md)
+6. [Security Architecture](docs/06-High-Fidelity-Prototypes.md)
+
+
+

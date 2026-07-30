@@ -217,3 +217,131 @@ The Website Portal shall:
 - Support secure software updates, maintenance, and defect resolution.
 - Provide responsive access across common desktop and tablet screen sizes.
 - Maintain reliable availability for account and device-management services.
+
+
+---
+
+# 5.2 LIMA Trailer Kiosk
+
+## Overview
+
+The LIMA Trailer Kiosk is an interactive self-service device designed for libraries and bookstores to enhance the book discovery experience. Users can identify a book by placing it on the RFID reader or scanning its barcode. The kiosk communicates with the LIMA cloud platform to retrieve book metadata, AI-generated trailers, recommendations, pricing information, and book location.
+
+The device integrates with the organisation's Library Management System (ILS) or Point of Sale (POS) system while securely communicating with the LIMA cloud platform through REST APIs. The kiosk provides a simple and engaging user experience that encourages readers to discover new books using multimedia content.
+
+---
+
+## Primary Actors
+
+- Library User
+- Bookstore Customer
+- Library Staff
+- Bookstore Staff
+- Administrator
+
+---
+
+## Sequence Diagram
+
+The following sequence diagram illustrates how the Trailer Kiosk communicates with the RFID reader, LIMA Backend, Cloud Storage, and the Library Management or Point-of-Sale system after a user scans a book. The platform retrieves the book metadata, streams the trailer, and returns personalised recommendations before displaying the information to the user.
+
+<p align="center">
+    <img src="../images/architecture/kiosk-sequence-diagram.png"
+         alt="LIMA Trailer Kiosk Sequence Diagram"
+         width="95%">
+</p>
+
+**Figure 3.6.** Sequence diagram illustrating communication between the Trailer Kiosk, cloud services, and library systems.
+
+---
+
+## Use Case Diagram
+
+The use case diagram presents the interactions between users, staff members, and administrators with the Trailer Kiosk. It illustrates the main functions available during normal operation and administrative management.
+
+<p align="center">
+    <img src="../images/architecture/kiosk-use-case-diagram.png"
+         alt="LIMA Trailer Kiosk Use Case Diagram"
+         width="90%">
+</p>
+
+**Figure 3.7.** Use case diagram for the LIMA Trailer Kiosk.
+
+---
+
+# Functional Requirements
+
+## User Requirements
+
+The system shall:
+
+- Allow users to identify a book using either RFID or barcode scanning.
+- Automatically recognise the selected book and retrieve its metadata.
+- Display the book title, author, and cover before trailer playback.
+- Allow users to play, pause, stop, and replay the trailer.
+- Display book recommendations based on the selected book, author, and genre.
+- Display the location and price of the selected book where available.
+
+---
+
+## Library and Bookstore Staff Requirements
+
+The system shall:
+
+- Allow staff to assist users during kiosk interaction.
+- Allow staff to verify trailer availability.
+- Allow staff to report inappropriate or incorrect multimedia content.
+- Allow staff to restart the kiosk or report hardware faults.
+
+---
+
+## Administrator Requirements
+
+The system shall:
+
+- Manage subscriptions.
+- Request new trailer content.
+- Register additional kiosk devices.
+- Manage tenant accounts.
+- Generate analytical reports based on user interactions.
+- Monitor kiosk status and software updates.
+
+---
+
+# System Functional Requirements
+
+The Trailer Kiosk shall:
+
+- Detect books using RFID sensors or barcode scanning.
+- Validate scanned identifiers.
+- Retrieve associated metadata.
+- Retrieve AI-generated trailers from cloud storage.
+- Handle situations where no trailer is available.
+- Cache frequently accessed trailers.
+- Synchronise video playback with audio.
+- Display playback controls.
+- Retrieve author recommendations and similar books.
+- Transmit operational logs to the cloud platform.
+- Notify users of scan failures, unavailable trailers, or network errors.
+- Automatically receive software updates from the LIMA cloud platform.
+
+---
+
+# Non-Functional Requirements
+
+The Trailer Kiosk shall:
+
+- Retrieve book metadata and trailers within three seconds under normal operating conditions.
+- Provide a display suitable for high-quality multimedia playback.
+- Include an RFID scanning area designed to safely support physical books.
+- Use accessible fonts, colours, and interface elements.
+- Automatically return to the home screen after a configurable period of inactivity.
+- Minimise user interaction by reducing unnecessary input steps.
+- Support remote software updates and maintenance performed by authorised personnel.
+- Operate without storing personal user information.
+
+---
+
+## Design Summary
+
+The Trailer Kiosk has been designed as a cloud-connected multimedia device that combines RFID technology, cloud computing, and Artificial Intelligence to improve book discovery within libraries and bookstores. The architecture separates user interaction from backend processing, allowing metadata retrieval, trailer streaming, and recommendation generation to be performed securely through the LIMA cloud platform. This modular approach improves scalability, simplifies maintenance, and enables additional AI services to be integrated without changing the kiosk hardware.

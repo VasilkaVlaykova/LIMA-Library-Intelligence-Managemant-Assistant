@@ -475,3 +475,139 @@ The Children's AI Reading Display shall:
 ## Design Summary
 
 The Children's AI Reading Display has been designed as a cloud-connected educational device that combines digital books, multimedia content, and Artificial Intelligence to encourage children's reading and learning. By separating the presentation layer from cloud-based content services, the platform can securely deliver licensed books, AI narration, and educational content while supporting future expansion through additional AI learning services without requiring hardware redesign.
+
+
+
+
+---
+
+# 5.4 LIMA AI Tablet
+
+## Overview
+
+The LIMA AI Tablet is a portable learning device designed for children and families. It provides access to digital books, AI-assisted narration, interactive learning activities, and personalised recommendations through a secure cloud platform. Parents can manage subscriptions, configure parental controls, and monitor device settings while children interact with age-appropriate educational content.
+
+The tablet communicates securely with the LIMA cloud platform to retrieve licensed books, multimedia resources, AI-generated narration, and personalised learning content. The platform applies parental restrictions and age-based content filtering before delivering content to the device.
+
+---
+
+## Primary Actors
+
+- Parent
+- Child
+- Administrator
+
+---
+
+## Sequence Diagram
+
+The sequence diagram illustrates how the AI Tablet communicates with the LIMA Backend, Cloud Storage, and AI Text-to-Speech service after a child selects a digital book. The cloud platform retrieves the requested content, streams narration audio, synchronises spoken words with on-screen text, and allows the child to continue reading through interactive page navigation.
+
+<p align="center">
+    <img src="../images/architecture/tablet-sequence-diagram.png"
+         alt="LIMA AI Tablet Sequence Diagram"
+         width="95%">
+</p>
+
+**Figure 3.10.** Sequence diagram illustrating communication between the LIMA AI Tablet and cloud services.
+
+---
+
+## Use Case Diagram
+
+The use case diagram illustrates the primary interactions between parents, children, and administrators when using and managing the LIMA AI Tablet.
+
+<p align="center">
+    <img src="../images/architecture/tablet-use-case-diagram.png"
+         alt="LIMA AI Tablet Use Case Diagram"
+         width="90%">
+</p>
+
+**Figure 3.11.** Use case diagram for the LIMA AI Tablet.
+
+---
+
+# Functional Requirements
+
+## Parent Requirements
+
+The system shall:
+
+- Allow parents to create and manage their account.
+- Allow parents to register the AI Tablet.
+- Allow parents to manage subscriptions.
+- Allow parents to configure parental control settings.
+- Allow parents to create a secure PIN to protect settings.
+- Notify parents about software updates, low battery status, and device maintenance.
+- Display safety guidance and recommended daily screen time.
+- Display information about device materials, safety features, and operating instructions.
+- Clearly explain the platform's privacy policy and data collection practices.
+- Allow parents to manage device settings remotely where supported.
+
+---
+
+## Child Requirements
+
+The system shall:
+
+- Allow children to browse and select digital books.
+- Display book covers, titles, and illustrations.
+- Allow children to start, pause, stop, and replay narration.
+- Highlight words during narration.
+- Allow children to navigate between pages using touch interaction.
+- Provide spoken guidance during device navigation.
+- Display and announce when the allocated reading time has ended according to parental control settings.
+
+---
+
+## Administrator Requirements
+
+The system shall:
+
+- Manage subscriptions.
+- Manage user accounts.
+- Register additional devices.
+- Publish and update digital book content.
+- Manage AI learning content.
+- Generate analytical reports.
+- Monitor device performance.
+- Provide technical support services.
+
+---
+
+# System Functional Requirements
+
+The AI Tablet shall:
+
+- Retrieve digital book content from cloud storage.
+- Display book covers, illustrations, and page content.
+- Generate or stream AI narration.
+- Synchronise narration with highlighted text.
+- Apply age-appropriate content filtering.
+- Enforce parental control settings.
+- Display network or content availability errors.
+- Provide spoken navigation assistance.
+- Notify users when software updates are available.
+- Automatically synchronise device settings with the cloud platform.
+
+---
+
+# Non-Functional Requirements
+
+The AI Tablet shall:
+
+- Load digital content within three seconds under normal operating conditions.
+- Use an eye-friendly display suitable for extended reading.
+- Be designed using child-safe materials with rounded edges.
+- Provide a durable display suitable for everyday use.
+- Use accessible fonts, colours, icons, and touch controls.
+- Deliver clear narration appropriate for children.
+- Support secure remote software updates.
+- Protect children's privacy by avoiding unnecessary storage of personal information.
+- Operate reliably throughout normal daily use.
+
+---
+
+## Design Summary
+
+The LIMA AI Tablet extends the cloud-based learning ecosystem beyond libraries and educational organisations by providing children with a portable AI-assisted reading experience. The solution combines cloud computing, Artificial Intelligence, multimedia content, and parental management features to create a secure and engaging learning environment. Its modular architecture allows new educational services, AI capabilities, and digital content to be integrated without modifying the underlying hardware platform.
